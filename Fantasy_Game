@@ -1,0 +1,11 @@
+stuff = {'Rope': 1, 'Torch': 6, 'Gold coin': 42, 'Dagger': 1, 'Arrow': 12}
+
+def displayInventory(inventory):
+    print("Inventory:")
+    item_total = 0
+    for x, y in inventory.items():
+        item_total += y
+        print(y, x)
+    print("Total number of items: " + str(item_total))
+    
+displayInventory(stuff)
